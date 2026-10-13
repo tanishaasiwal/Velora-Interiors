@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora Interiors</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a
+            class="navbar-brand"
+            href="#home"
+            aria-label="Vélora Interiors home"
+          >
+            <span>VÉLORA</span>
+            <span>INTERIORS</span>
+          </a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+          <li class="mobile-inquiry-item">
+            <button class="mobile-inquiry-trigger" type="button">
+              Inquiry
+            </button>
+          </li>
+        </ul>
+        <div class="nav-btn">
+          <button class="contact-btn inquiry-trigger" type="button">
+            Inquiry
+          </button>
+        </div>
+      </nav>
+    </header>
+    <dialog
+      class="inquiry-dialog"
+      id="inquiry-dialog"
+      aria-labelledby="inquiry-title"
+    >
+      <div class="inquiry-panel">
+        <div class="inquiry-panel-header">
+          <div>
+            <span>VÉLORA INTERIORS</span>
+            <h2 id="inquiry-title">Tell us about your project.</h2>
+          </div>
+          <button
+            class="inquiry-close"
+            type="button"
+            aria-label="Close enquiry form"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p class="inquiry-intro">
+          Share a few details and we can start shaping a space around you.
+        </p>
+        <form class="contact-form inquiry-form">
+          <div class="contact-form-heading">
+            <span>PROJECT ENQUIRY</span>
+            <p>Fields marked * are required.</p>
+          </div>
+          <div class="contact-form-row inquiry-form-row">
+            <div class="contact-field">
+              <label for="inquiry-name">Your name *</label>
+              <input
+                id="inquiry-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="e.g. Aanya Sharma"
+                required
+              />
+            </div>
+            <div class="contact-field">
+              <label for="inquiry-email">Email address *</label>
+              <input
+                id="inquiry-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="inquiry-project">What are you envisioning?</label>
+            <select id="inquiry-project" name="project-type">
+              <option value="" selected disabled>Select a project type</option>
+              <option value="residential">Residential interiors</option>
+              <option value="commercial">Commercial space</option>
+              <option value="consultation">Design consultation</option>
+              <option value="turnkey">Turnkey project</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="contact-field inquiry-message-field">
+            <label for="inquiry-message"
+              >A few details about your project *</label
+            >
+            <textarea
+              id="inquiry-message"
+              name="message"
+              rows="4"
+              placeholder="Location, space, goals, or anything you'd like us to know..."
+              required
+            ></textarea>
+          </div>
+          <button class="contact-submit" type="submit">
+            Send enquiry <span aria-hidden="true">↗</span>
+          </button>
+          <p class="inquiry-form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </dialog>
+    <main>
+      <section class="hero" id="home">
+        <div
+          class="hero-bg active"
+          style="background-image: url(bg-img1.jpeg)"
+        ></div>
+        <div class="hero-bg" style="background-image: url(bg-img2.jpeg)"></div>
+        <div class="hero-bg" style="background-image: url(bg-img3.jpeg)"></div>
+        <div class="hero-bg" style="background-image: url(bg-img4.jpeg)"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up">
+          <span class="brand-name">VÉLORA INTERIORS</span>
+          <h1>
+            Designing Spaces. <br />
+            Designing Elegance.
+          </h1>
+          <p>
+            Thoughtfully designed interiors that blend timeless elegance with
+            modern living.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">Explore Projects</a>
+            <a href="#process" class="btn-secondary">Our Studio</a>
+          </div>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="left-img" data-aos="fade-right">
+            <img src="about-img.jpg" alt="" />
+          </div>
+          <div class="right-content" data-aos="fade-left">
+            <span class="about-tag">ABOUT THE STUDIO</span>
+            <h2 class="about-heading">
+              More Than Interiors. We Create Lifestyles.
+            </h2>
+            <p class="about-description">
+              We believe exceptional interiors are more than beautiful spaces.
+              They reflect the people who live in them, their stories, and the
+              way they experience everyday life.
+            </p>
+            <p class="about-description">
+              At VÉLORA, we combine timeless materials, thoughtful details, and
+              modern design to create spaces that feel personal, effortless, and
+              enduring.
+            </p>
+            <div class="about-btn">
+              <a href="#process" class="discover-studio">
+                Discover Our Studio
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services-section">
+        <div class="service-header" data-aos="fade-up">
+          <span class="service-heading">What We Offer</span>
+          <h2 class="sub-heading">
+            Thoughtfully Designed Beautifully Delivered
+          </h2>
+          <p class="services-description">
+            From initial ideas to the final details, we create considered spaces
+            that bring beauty, comfort, and purpose together.
+          </p>
+        </div>
+        <div class="services-container" id="services">
+          <div class="service-cards">
+            <div class="service-top">
+              <i class="fa-solid fa-house service-icon"></i>
+              <span class="card-number">01</span>
+            </div>
+            <div class="service-card-content">
+              <h2>Residential Interiors</h2>
+              <p>
+                Thoughtfully designed homes, villas, and apartments that reflect
+                your personality and elevate everyday living
+              </p>
+            </div>
+          </div>
+          <div class="service-cards">
+            <div class="service-top">
+              <i class="fa-solid fa-building service-icon"></i>
+              <span class="card-number">02</span>
+            </div>
+            <div class="service-card-content">
+              <h2>Commercial Spaces</h2>
+              <p>
+                Inspiring offices and hospitality spaces that balance
+                functionality, sophisticated aesthetics, and lasting
+                impressions.
+              </p>
+            </div>
+          </div>
+          <div class="service-cards">
+            <div class="service-top">
+              <i class="fa-solid fa-layer-group service-icon"></i>
+              <span class="card-number">03</span>
+            </div>
+            <div class="service-card-content">
+              <h2>Turnkey Solutions</h2>
+              <p>
+                From concept and material selection to execution and final
+                finishing, we bring every design detail to life.
+              </p>
+            </div>
+          </div>
+          <div class="service-cards">
+            <div class="service-top">
+              <i class="fa-solid fa-compass-drafting service-icon"></i>
+              <span class="card-number">04</span>
+            </div>
+            <div class="service-card-content">
+              <h2>Design Consultation</h2>
+              <p>
+                Personalized design advice, expert space planning, and carefully
+                curated ideas tailored to your vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section">
+        <div class="project-header" id="projects" data-aos="fade-right">
+          <div class="left-header">
+            <span class="project-tag">OUR PORTFOLIO</span>
+            <h2 class="project-heading">Spaces That Tell Our Story.</h2>
+          </div>
+          <div class="view-all"><a href="#">View All ↗</a></div>
+        </div>
+        <div class="project-container">
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="residential1.jpg" alt="residential" />
+            </div>
+            <div class="project-content">
+              <span class="category">RESIDENTIAL</span>
+              <h3>The Serene Residence</h3>
+
+              <div class="location-category">
+                <span>Modern Home • New Delhi, India</span>
+              </div>
+              <p>
+                A warm, contemporary home blending natural textures, elegant
+                finishes, and everyday comfort.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="residential2.jpg" alt="residential" />
+            </div>
+            <div class="project-content">
+              <span class="category">RESIDENTIAL</span>
+              <h3>The Oak Haven</h3>
+
+              <div class="location-category">
+                <span>Luxury Apartment • Gurugram, India</span>
+              </div>
+              <p>
+                A sophisticated apartment with warm wood details, soft neutrals,
+                and a functional open layout.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="residential3.jpg" alt="residential" />
+            </div>
+            <div class="project-content">
+              <span class="category">RESIDENTIAL</span>
+              <h3>The Ivory House</h3>
+
+              <div class="location-category">
+                <span>Family Home • Jaipur, India</span>
+              </div>
+              <p>
+                A timeless family home with natural light, understated luxury,
+                and carefully curated details.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="commercial1.jpg" alt="commercial" height="100px" />
+            </div>
+            <div class="project-content">
+              <span class="category">COMMERCIAL</span>
+              <h3>The Executive Suite</h3>
+
+              <div class="location-category">
+                <span>Corporate Office • Gurugram, India</span>
+              </div>
+              <p>
+                A polished professional workspace with premium materials and
+                purposeful planning.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="commercial2.jpg" alt="commercial" />
+            </div>
+            <div class="project-content">
+              <span class="category">COMMERCIAL</span>
+              <h3>The Creative Office</h3>
+
+              <div class="location-category">
+                <span>Creative Studio • New Delhi, India</span>
+              </div>
+              <p>
+                A modern, inspiring studio designed for collaboration,
+                creativity, and productivity.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="commercial3.jpg" alt="COMMERCIAL" />
+            </div>
+            <div class="project-content">
+              <span class="category">COMMERCIAL</span>
+              <h3>The Corporate Edge</h3>
+
+              <div class="location-category">
+                <span>Corporate Headquarters • Noida, India</span>
+              </div>
+              <p>
+                A refined headquarters featuring elegant reception spaces,
+                modern finishes, and clean lines.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="villa1.jpg" alt="LUXURY VILLA" />
+            </div>
+            <div class="project-content">
+              <span class="category">LUXURY VILLA</span>
+              <h3>The Palm Estate</h3>
+
+              <div class="location-category">
+                <span>Tropical Villa • Goa, India</span>
+              </div>
+              <p>
+                A serene tropical retreat connecting open interiors with lush
+                outdoor surroundings.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="villa2.jpg" alt="LUXURY VILLA" />
+            </div>
+            <div class="project-content">
+              <span class="category">LUXURY VILLA</span>
+              <h3>The Grand Retreat</h3>
+
+              <div class="location-category">
+                <span>Contemporary Mansion • Jaipur, India </span>
+              </div>
+              <p>
+                A statement home combining grand proportions, bespoke finishes,
+                and timeless elegance.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="villa3.jpg" alt="LUXURY VILLA" />
+            </div>
+            <div class="project-content">
+              <span class="category">LUXURY VILLA</span>
+              <h3>The Azure Villa</h3>
+
+              <div class="location-category">
+                <span>Coastal Villa • Alibaug, India</span>
+              </div>
+              <p>
+                A peaceful coastal home with airy spaces, natural finishes, and
+                resort-inspired interiors.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="banquet1.jpg" alt="BANQUET" />
+            </div>
+            <div class="project-content">
+              <span class="category">BANQUET</span>
+              <h3>The Grand Pavilion</h3>
+
+              <div class="location-category">
+                <span>Luxury Wedding Venue • New Delhi, India</span>
+              </div>
+              <p>
+                An elegant celebration venue with dramatic chandeliers and
+                sophisticated event styling.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="banquet2.jpg" alt="BANQUET" />
+            </div>
+            <div class="project-content">
+              <span class="category">BANQUETA</span>
+              <h3>The Royal Ballroom</h3>
+
+              <div class="location-category">
+                <span>Royal Banquet Hall • Jaipur, India</span>
+              </div>
+              <p>
+                A grand venue inspired by regal details, warm lighting, and
+                luxurious finishes.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="banquet3.jpg" alt="BANQUET" />
+            </div>
+            <div class="project-content">
+              <span class="category">BANQUET</span>
+              <h3>The Celeste Hall</h3>
+
+              <div class="location-category">
+                <span>Contemporary Event Hall • Gurugram, India</span>
+              </div>
+              <p>
+                A contemporary venue designed for elegant celebrations, flexible
+                layouts, and memorable gatherings.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="cafe1.jpg" alt="RESTAURANT" />
+            </div>
+            <div class="project-content">
+              <span class="category">RESTAURANT</span>
+              <h3>The Ember Room</h3>
+
+              <div class="location-category">
+                <span>Fine Dining Restauran • New Delhi, India</span>
+              </div>
+              <p>
+                An intimate dining experience shaped by warm lighting, rich
+                textures, and elegant furnishings.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="cafe2.jpg" alt="RESTAURANT" />
+            </div>
+            <div class="project-content">
+              <span class="category">CAFÉ</span>
+              <h3>Maison Bloom</h3>
+
+              <div class="location-category">
+                <span>Boutique Café • Mumbai, India</span>
+              </div>
+              <p>
+                A relaxed café with organic forms, natural materials, and a soft
+                contemporary aesthetic.
+              </p>
+            </div>
+          </div>
+          <div class="project-cards">
+            <div class="project-img">
+              <img src="cafes3.jpg" alt="RESTAURANT" />
+            </div>
+            <div class="project-content">
+              <span class="category">RESTAURANT</span>
+              <h3>The Saffron Table</h3>
+
+              <div class="location-category">
+                <span>Luxury Dining Lounge • Jaipur, India</span>
+              </div>
+              <p>
+                A refined dining space with striking materials, intimate
+                lighting, and a memorable atmosphere.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="design-philosophy-section">
+        <div class="philosophy-container">
+          <div class="left-design-content" data-aos="fade-right">
+            <span class="design-tag">OUR DESIGN PHILOSOPHY</span>
+            <h2 class="design-heading">
+              True luxury is not about more. It is about meaning
+            </h2>
+            <p class="design-description">
+              We create thoughtful spaces where every detail has a purpose and
+              every corner tells a story.
+            </p>
+            <span class="approach">THE VÉLORA APPROACH</span>
+          </div>
+          <div class="design-right-img" data-aos="fade-left">
+            <img src="design-phiolsphyimg.jpg" alt="design" />
+          </div>
+        </div>
+      </section>
+      <section class="process-section" id="process">
+        <div class="process-container">
+          <div class="process-header" data-aos="fade-up">
+            <span class="process-label">HOW WE WORK</span>
+            <h2>
+              A Thoughtful Process,<br /><span>Beautifully Executed.</span>
+            </h2>
+          </div>
+          <div class="process-timeline">
+            <div class="process-step">
+              <div class="process-number">01</div>
+              <h3>Discover</h3>
+              <p>
+                We learn about your lifestyle, needs, and vision for the space.
+              </p>
+            </div>
+            <div class="process-step">
+              <div class="process-number">02</div>
+
+              <h3>Design</h3>
+
+              <p>
+                We turn your vision into thoughtful layouts and material
+                palettes.
+              </p>
+            </div>
+            <div class="process-step">
+              <div class="process-number">03</div>
+
+              <h3>Execute</h3>
+
+              <p>
+                We coordinate sourcing and on-site work to bring your design to
+                life.
+              </p>
+            </div>
+            <div class="process-step">
+              <div class="process-number">04</div>
+
+              <h3>Deliver</h3>
+
+              <p>We finish every detail and hand over your completed space.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-container">
+          <div class="testimonials-header" data-aos="fade-up">
+            <span class="testimonials-label">WORDS FROM OUR CLIENTS</span>
+            <h2>Spaces made personal.<br />Stories worth sharing.</h2>
+            <p>
+              Thoughtful design is best measured by how a space makes you feel.
+            </p>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <div class="testimonial-topline">
+                <span
+                  class="testimonial-stars"
+                  role="img"
+                  aria-label="5 out of 5 stars"
+                  >★★★★★</span
+                >
+                <span class="testimonial-mark" aria-hidden="true">“</span>
+              </div>
+              <blockquote>
+                Vélora understood how our family lives before they ever started
+                designing. The result feels beautiful, welcoming, and completely
+                ours.
+              </blockquote>
+              <div class="testimonial-client">
+                <span class="client-initials" aria-hidden="true">AK</span>
+                <div>
+                  <h3>Rhea &amp; Arjun Khanna</h3>
+                  <p>The Serene Residence · New Delhi</p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card testimonial-card-featured">
+              <div class="testimonial-topline">
+                <span
+                  class="testimonial-stars"
+                  role="img"
+                  aria-label="5 out of 5 stars"
+                  >★★★★★</span
+                >
+                <span class="testimonial-mark" aria-hidden="true">“</span>
+              </div>
+              <blockquote>
+                Every detail feels considered, but nothing feels overdone. They
+                turned a challenging renovation into the calmest part of our
+                year.
+              </blockquote>
+              <div class="testimonial-client">
+                <span class="client-initials" aria-hidden="true">MS</span>
+                <div>
+                  <h3>Meera Shah</h3>
+                  <p>The Oak Haven · Gurugram</p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-topline">
+                <span
+                  class="testimonial-stars"
+                  role="img"
+                  aria-label="5 out of 5 stars"
+                  >★★★★</span
+                >
+                <span class="testimonial-mark" aria-hidden="true">“</span>
+              </div>
+              <blockquote>
+                Our studio now feels like the work we create: warm, considered,
+                and full of character. The team made the whole process
+                effortless.
+              </blockquote>
+              <div class="testimonial-client">
+                <span class="client-initials" aria-hidden="true">NS</span>
+                <div>
+                  <h3>Neelam Suri</h3>
+                  <p>The Creative Office · New Delhi</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section" id="faq">
+        <div class="faq-container">
+          <div class="faq-intro" data-aos="fade-right">
+            <span class="faq-label">A LITTLE CLARITY</span>
+            <h2>Good design starts with good questions.</h2>
+            <p>
+              Here are a few things clients often ask us before getting started.
+            </p>
+          </div>
+          <div class="faq-list" data-aos="fade-left">
+            <details class="faq-item" open>
+              <summary>What types of spaces does Vélora design?</summary>
+              <p>
+                We design homes, villas, apartments, offices, cafés,
+                restaurants, and hospitality spaces. Our services can cover a
+                complete interior or focus on the areas that matter most to you.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>How does the design process begin?</summary>
+              <p>
+                We start with a conversation about your space, lifestyle,
+                priorities, and inspiration. From there, we shape a design
+                direction and project scope around your needs.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>How long does an interior project take?</summary>
+              <p>
+                Timelines depend on the size of the space, design scope, and
+                execution requirements. After learning more about your project,
+                we can outline a considered schedule for each stage.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Can you work within my budget?</summary>
+              <p>
+                Yes. We discuss your budget early and use it to guide material,
+                furniture, and scope decisions. A tailored estimate follows once
+                we understand the space and your priorities.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Where do you take on projects?</summary>
+              <p>
+                We take on projects across India. Depending on the location and
+                scope, design discussions can begin remotely, with site visits
+                planned as the project requires.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <div class="contact-copy" data-aos="fade-right">
+            <span class="contact-label">LET'S CREATE SOMETHING MEANINGFUL</span>
+            <h2>Tell us about the space you have in mind.</h2>
+            <p>
+              Share a little about your project and what matters to you. We’ll
+              be in touch to start a thoughtful conversation.
+            </p>
+            <div class="contact-details">
+              <div>
+                <span class="contact-detail-label">STUDIO</span>
+                <p>New Delhi, India<br />Working across India</p>
+              </div>
+              <div>
+                <span class="contact-detail-label">GOOD TO KNOW</span>
+                <p>Residential · Commercial<br />Consultation · Turnkey</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" data-aos="fade-left">
+            <div class="contact-form-heading">
+              <span>PROJECT ENQUIRY</span>
+              <p>Fields marked * are required.</p>
+            </div>
+            <div class="contact-form-row">
+              <div class="contact-field">
+                <label for="contact-name">Your name *</label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="e.g. Aanya Sharma"
+                  required
+                />
+              </div>
+              <div class="contact-field">
+                <label for="contact-email">Email address *</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact-field">
+              <label for="contact-project">What are you envisioning?</label>
+              <select id="contact-project" name="project-type">
+                <option value="" selected disabled>
+                  Select a project type
+                </option>
+                <option value="residential">Residential interiors</option>
+                <option value="commercial">Commercial space</option>
+                <option value="consultation">Design consultation</option>
+                <option value="turnkey">Turnkey project</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="contact-field">
+              <label for="contact-message"
+                >A few details about your project *</label
+              >
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="4"
+                placeholder="Location, space, goals, or anything you'd like us to know..."
+                required
+              ></textarea>
+            </div>
+            <button class="contact-submit" type="submit">
+              Send project enquiry <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand" data-aos="fade-right">
+          <a
+            class="footer-wordmark"
+            href="#home"
+            aria-label="Vélora Interiors home"
+          >
+            <span>VÉLORA</span>
+            <span>INTERIORS</span>
+          </a>
+          <p>Thoughtful spaces, shaped around the way you live.</p>
+        </div>
+        <nav
+          class="footer-nav"
+          aria-label="Footer navigation"
+          data-aos="fade-up"
+        >
+          <h2>EXPLORE</h2>
+          <a href="#about">Our studio</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Selected projects</a>
+          <a href="#testimonials">Client stories</a>
+          <a href="#faq">Frequently asked</a>
+        </nav>
+        <div class="footer-studio" data-aos="fade-left">
+          <h2>FIND THE STUDIO</h2>
+          <p>New Delhi, India</p>
+          <p>Designing across India</p>
+          <a class="footer-contact-link" href="#contact">
+            Start a conversation <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-aos="fade-up">
+        <p>© 2026 VÉLORA INTERIORS. ALL RIGHTS RESERVED.</p>
+        <a href="#home" class="back-to-top"
+          >Back to top <span aria-hidden="true">↑</span></a
+        >
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
